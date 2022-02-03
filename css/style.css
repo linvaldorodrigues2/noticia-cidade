@@ -97,6 +97,18 @@ h3 {
   font-size: 0.8em;
   padding: 3px;
 }
+.caixa-titulo h3{
+    background: #b10333;
+    color: #fff;
+    padding: 5px;
+}
+.caixa-link a {
+  text-decoration: none;
+  color: #de003e;
+}
+.caixa-link a:hover {
+  border-bottom: 1px solid #de003e;
+}
 /*imagens*/
 .imagem-principal {
   border: 3px solid #dfdfdf;
@@ -108,6 +120,9 @@ h3 {
   border-bottom: 1px solid #ccc;
   height: 62px;
   list-style-type: none;
+}
+.lista-noticia li:hover {
+  background: #dfdfdf;
 }
 .lista-noticia a {
   text-decoration: none;
