@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 1em "Trebuchet MS", sans-serif;
+  background: #fff url(../img/fundo.png) repeat-x;
+}
+/*topo*/
+.container {
+  width: 750px;
+  margin: 0 auto;
+}
+#topo {
+  height: 160px;
+  padding: 15px;
+  background: url(../img/detalhe-topo.png) no-repeat right top;
+}
+#logo {
+  width: 152px;
+  height: 66px;
+  background: url(../img/logo.png);
+  text-indent: -9000px; /*Para acessibidade*/
+}
+#topo ul {
+  margin: 0;
+  padding: 0;
+  background: #b10333;
+  margin-top: 30px;
+  float: left;
+  list-style-type: none;
+}
+#topo li {
+  float: left;
+}
+#topo a {
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../img/divisor.png) no-repeat left center;
+}
+#topo ul #primeiro a {
+  background: none;
+}
+#topo ul a:hover {
+  color: #69001d;
+}
+/*marcador de página atual*/
+#topo ul a#home {
+  color: #fff;
+  background: #de003e;
+}
