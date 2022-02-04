@@ -74,6 +74,45 @@ body {
   margin: 0 0 20px -750px;
   float: left;
 }
+/*Lateral*/
+#lateral ul {
+  list-style-type: none;
+}
+#lateral a {
+  font-size: 0.9em;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+#lateral a:hover {
+  color: #a1a1a1;
+  background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+  text-indent: 20px;
+}
+input {
+  font-size: 0.9em;
+  background: #fff;
+  width: 95%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  width: 80px;
+  color: #fff;
+  background: #b10333;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+button:hover {
+  background: #de003e;
+  color: #fff;
+  cursor: pointer;
+}
 /*formatação geral*/
 .caixa {
   background: url(../img/fundo-caixa.png);
@@ -97,10 +136,11 @@ h3 {
   font-size: 0.8em;
   padding: 3px;
 }
-.caixa-titulo h3{
-    background: #b10333;
-    color: #fff;
-    padding: 5px;
+/*Colunas*/
+.caixa-titulo h3 {
+  background: #b10333;
+  color: #fff;
+  padding: 5px;
 }
 .caixa-link a {
   text-decoration: none;
