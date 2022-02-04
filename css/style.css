@@ -5,6 +5,7 @@
 body {
   font: 1em "Trebuchet MS", sans-serif;
   background: #fff url(../img/fundo.png) repeat-x;
+  overflow-x: hidden;
 }
 /*topo*/
 .container {
@@ -180,4 +181,15 @@ h3 {
 }
 .lista-noticia p {
   font-size: 0.7em;
+}
+/*footer*/
+footer {
+  width: 100%;
+  background: #294c71;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+  top: 80px;
 }
