@@ -50,7 +50,9 @@ body {
   color: #69001d;
 }
 /*marcador de página atual*/
-#topo ul a#home {
+#topo ul a#home,
+#topo ul a#brasil,
+#topo ul a#foto {
   color: #fff;
   background: #de003e;
 }
@@ -182,6 +184,9 @@ h3 {
 .lista-noticia p {
   font-size: 0.7em;
 }
+ul .ultima-borda {
+  border: none;
+}
 /*footer*/
 footer {
   width: 100%;
@@ -192,4 +197,12 @@ footer {
   padding: 10px 0;
   position: relative;
   top: 80px;
+}
+/*layout de brasil e foto*/
+#uma-coluna #primeiro {
+  width: 750px;
+  margin: 0 auto;
+}
+#duas-colunas #primeiro {
+  width: 555px;
 }
