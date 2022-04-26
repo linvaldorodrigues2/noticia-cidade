@@ -67,7 +67,6 @@ nav ul a#foto {
 }
 #segundo {
   width: 270px;
-
   order: 3;
 }
 #lateral {
@@ -153,18 +152,26 @@ button:hover {
   background: #b10333;
   color: #fff;
   padding: 5px;
+  box-sizing: border-box;
 }
-.destaque a {
+.destaque a,
+.entrevistas a {
   text-decoration: none;
   color: #de003e;
 }
-.destaque a:hover {
+.destaque a:hover,
+.entrevistas a:hover {
   border-bottom: 1px solid #de003e;
 }
 .img-conteudo {
   border: 3px solid #dfdfdf;
   width: 98%;
 }
+/*secundario*/
+.entrevistas h3 {
+  background: #b10333;
+}
+
 /*primario - lista*/
 .lista li {
   padding: 2px;
@@ -192,7 +199,7 @@ button:hover {
 .lista p {
   font-size: 0.7em;
 }
-ul .ultima-borda {
+.lista-borda {
   border: none;
 }
 
@@ -204,8 +211,6 @@ footer {
   text-align: center;
   margin: 0 auto;
   padding: 10px 0;
-  position: relative;
-  top: 80px;
 }
 /*layout de brasil e foto*/
 #uma-coluna #primeiro {
