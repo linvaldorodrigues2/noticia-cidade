@@ -8,93 +8,92 @@
     <title>Notícia cidade</title>
   </head>
   <body>
-    <header class="container">
-      <h1 id="logo">Notícia ciadade</h1>
-      <nav>
-        <ul>
-          <li id="primeiro">
-            <a id="home" href="../html/home.html">Home</a>
-          </li>
-          <li>
-            <a href="../html/brasil.html">Brasil</a>
-          </li>
-          <li>
-            <a href="">Internacioanal</a>
-          </li>
-          <li>
-            <a href="">Economia</a>
-          </li>
-          <li>
-            <a href="">Saúde</a>
-          </li>
-          <li>
-            <a href="">Ciências</a>
-          </li>
-          <li>
-            <a href="../html/foto.html">Fotos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="container">
+    <div id="container">
+      <header>
+        <h1 id="logo">Notícia ciadade</h1>
+        <nav>
+          <ul>
+            <li id="primeiro">
+              <a id="home" href="../html/home.html">Home</a>
+            </li>
+            <li>
+              <a href="../html/brasil.html">Brasil</a>
+            </li>
+            <li>
+              <a href="">Internacioanal</a>
+            </li>
+            <li>
+              <a href="">Economia</a>
+            </li>
+            <li>
+              <a href="">Saúde</a>
+            </li>
+            <li>
+              <a href="">Ciências</a>
+            </li>
+            <li>
+              <a href="../html/foto.html">Fotos</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div id="conteudo">
         <!--primeira coluna-->
         <section id="primeiro">
-          <div class="caixa">
+          <article class="caixa">
             <h2>Destaques</h2>
-            <div class="caixa-conteudo caixa-link caixa-titulo">
+            <div class="caixa-conteudo destaque">
               <h3>Nova legislação</h3>
-              <img
-                class="imagem-principal"
-                src="../img/taxi.jpg"
-                alt="texi.png"
-              />
+              <img class="img-conteudo" src="../img/taxi.jpg" alt="texi.png" />
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               <a href="#">Leia mais</a>
             </div>
-          </div>
+          </article>
 
-          <div class="caixa">
-            <h2>Mundo</h2>
-            <div class="caixa-conteudo">
-              <ul class="lista-noticia">
-                <li>
-                  <a href="">
-                    <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
-                    <h3>Novas tecnologias</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
-                    <h3>Novas tecnologias</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </a>
-                </li>
-                <li class="ultima-borda">
-                  <a href="">
-                    <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
-                    <h3>Novas tecnologias</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <section>
+            <article class="caixa">
+              <h2>Mundo</h2>
+              <div class="caixa-conteudo lista">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
+                      <h3>Novas tecnologias</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
+                      <h3>Novas tecnologias</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="ultima-borda">
+                    <a href="">
+                      <img src="../img/tecnologia.jpg" alt="tecnologia.png" />
+                      <h3>Novas tecnologias</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
         </section>
 
         <!--Segunda coluna-->
         <section id="segundo">
           <div class="caixa">
             <h2>Últimas entrevistas</h2>
-            <div class="caixa-conteudo caixa-link caixa-titulo">
+            <div class="caixa-conteudo">
               <h3>Entrevista com Felipe Silva</h3>
               <img
                 class="imagem-principal"
@@ -142,7 +141,7 @@
         </section>
 
         <section id="lateral">
-          <div class="caixa">
+          <aside class="caixa">
             <h2>Entrevistas</h2>
             <div class="caixa-conteudo">
               <ul>
@@ -166,7 +165,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </aside>
           <div class="caixa">
             <h2>News</h2>
             <div class="caixa-conteudo">
@@ -184,7 +183,7 @@
           </div>
         </section>
       </div>
-    </section>
-    <footer style="clear: both">&copy; Todos os direitos reservados</footer>
+      <!--<footer style="clear: both">&copy; Todos os direitos reservados</footer>-->
+    </div>
   </body>
 </html>
