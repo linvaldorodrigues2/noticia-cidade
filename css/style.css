@@ -3,6 +3,9 @@ body {
   background: #fff url(../img/fundo.png) repeat-x;
   overflow-x: hidden;
 }
+* {
+  box-sizing: border-box;
+}
 
 /*formatação geral*/
 h2 {
@@ -17,6 +20,9 @@ h2 {
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 /*header*/
 #logo {
   width: 160px;
@@ -24,17 +30,28 @@ ul {
   background: url(../img/logo.png) no-repeat;
   text-indent: -9000px;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
 @media only screen and (max-width: 599.98px) {
-  [class*="col-"] {
+  .col-12 {
     width: 100%;
   }
-  #container {
+
+  .container {
     display: flex;
     justify-content: center;
   }
   header {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,15 +76,79 @@ ul {
     height: 9px;
     background: #fff;
     margin: 6px 0;
+  }
+  #conteudo {
+    width: 90%;
+    margin-top: 230px;
+    background: #fff;
+  }
+  .conteudo-caixa {
+    background: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .galery {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .fotos {
+    width: 500%;
+    animation-name: carrosel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  .fotos img {
+    width: 19.9%;
+  }
+  #lateral {
+    width: 100%;
+  }
+  #lateral ul a {
+    font-size: 1em;
+    padding: 3px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  #lateral .form {
+    display: none;
+  }
+  footer {
+    background: #294c71;
+    height: 200px;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer p {
+    text-align: center;
   }
 }
 
 @media only screen and (min-width: 600px) {
+  .col-6 {
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
   #container {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   header {
     width: 98%;
     display: flex;
@@ -94,6 +175,134 @@ ul {
     height: 9px;
     background: #fff;
     margin: 6px 0;
+  }
+
+  #conteudo {
+    width: 98%;
+    margin-top: 250px;
+  }
+
+  #primario {
+    display: flex;
+    justify-content: center;
+  }
+  #primario .destaque {
+    width: 630px;
+  }
+  #primario .galery {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+  }
+  #primario .fotos {
+    width: 500%;
+    animation-name: carrosel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  #primario .fotos img {
+    width: 19.9%;
+  }
+
+  #secundario {
+    float: right;
+    width: 50%;
+  }
+  #secundario .galery {
+    position: relative;
+  }
+  #secundario .fotos {
+    position: absolute;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  #secundario .img {
+    width: 41%;
+    margin: 0 10px 10px 10px;
+    padding: 0;
+    float: left;
+  }
+  #secundario .fotos img {
+    width: 90%;
+  }
+  #secundario .fotos h3 {
+    margin: 0;
+    padding: 0;
+    color: #3e7ab9;
+    font-size: 1.2em;
+  }
+  #secundario .fotos p {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 1em;
+  }
+
+  #lateral .col-6 {
+    position: relative;
+  }
+  #lateral {
+    float: left;
+    width: 50%;
+  }
+  #lateral ul {
+    margin: 0;
+    padding: 0;
+  }
+  #lateral ul li a {
+    font-size: 1em;
+    padding: 3px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    text-indent: 20px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  #lateral .form {
+    width: 100%;
+  }
+  #lateral form {
+    margin-left: 20px;
+  }
+  #lateral label {
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+  #lateral input {
+    width: 100%;
+    height: 28px;
+    margin: 5px 0;
+    border: 1px solid #dddddd;
+  }
+  #lateral button {
+    background: #b10333;
+    color: #fff;
+    border: none;
+    height: 25px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background: #294c71;
+    height: 200px;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer img {
+    margin-left: 20px;
+  }
+  footer p {
+    text-align: center;
+    margin-right: 25px;
   }
 }
 
