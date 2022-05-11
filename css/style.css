@@ -103,6 +103,9 @@ a {
   .fotos img {
     width: 19.9%;
   }
+  #secundario h3, #secundario p{
+    display: none;
+  }
   #lateral {
     width: 100%;
   }
@@ -143,7 +146,7 @@ a {
     width: 100%;
   }
 
-  #container {
+  .container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -285,7 +288,7 @@ a {
     height: 25px;
     margin-top: 10px;
   }
-  
+
   footer {
     background: #294c71;
     height: 200px;
@@ -307,8 +310,15 @@ a {
 }
 
 @media only screen and (min-width: 992px) {
-  #container {
-    width: 98%;
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-d-8 {
+    width: 66.66%;
+  }
+
+  .container {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -316,16 +326,20 @@ a {
     background: url(../img/detalhe-topo.png) no-repeat top right;
     height: 165px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
   }
   #menu-icon {
     display: none;
   }
-  nav {
-    width: 50%;
+  #logo {
     position: absolute;
-    right: 330px;
+    left: 3%;
+  }
+  nav {
+    width: 40%;
+    position: absolute;
+    left: 25%;
   }
   nav ul {
     display: flex;
@@ -347,5 +361,52 @@ a {
   }
   nav a#home {
     border-bottom: 2px solid #b10333;
+  }
+
+  #conteudo {
+    width: 100%;
+    margin: 60px;
+    display: flex;
+  }
+
+  #primario {
+    width: 50%;
+    order: 2;
+  }
+  #primario .destaque {
+    width: 750px;
+  }
+  #primario .galery {
+    width: 100%;
+    height: auto;
+  }
+
+  #secundario {
+    width: 30%;
+    order: 3;
+  }
+  #secundario .galery {
+    position: relative;
+  }
+  #secundario .fotos {
+    position: absolute;
+    left: 10px;
+  }
+  #secundario .img {
+    width: 40%;
+  }
+
+  #lateral {
+    width: 20%;
+    order: 1;
+  }
+
+  footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    display: none;
   }
 }
