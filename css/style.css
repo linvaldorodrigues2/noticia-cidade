@@ -1,6 +1,6 @@
 body {
   font: 1em "Trebuchet MS", sans-serif;
-  background: #fff url(../img/fundo.png) repeat-x;
+  background: #fff url(../img/recursos/fundo.png) repeat-x;
   overflow-x: hidden;
 }
 * {
@@ -27,7 +27,7 @@ a {
 #logo {
   width: 160px;
   height: 66px;
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/recursos/logo.png) no-repeat;
   text-indent: -9000px;
 }
 .row::after {
